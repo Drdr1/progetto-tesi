@@ -58,9 +58,25 @@ from config.pyblio_config import AuthorRetrieval, ScopusSearch
 
 ## Project Structure
 
-├── config/          # Configuration and imports
-├── scripts/         # Analysis scripts
-├── data/            # Input/output data
-│   ├── results/     # CSV exports
-│   └── exports/     # Excel reports
-└── docs/            # Documentation
+progetto-tesi/
+│
+├── README.md                          ✓ Project documentation
+├── requirements.txt                   ✓ Dependencies list
+├── .gitignore                         ✓ What to exclude
+│
+├── config/
+│   └── pyblio_config.py               ✓ Configuration module
+│                                        (import from this!)
+│
+├── scripts/
+│   ├── 00_install_and_test.py         ✓ Test installation
+│   ├── 01_author_profile.py           ✓ Example: author analysis
+│   ├── 02_publication_search.py       ✓ Example: search
+│   └── 03_data_analysis.py            ✓ Example: visualization
+│
+├── data/
+│   ├── results/                       ✓ CSV exports (auto-created)
+│   └── exports/                       ✓ Excel reports (auto-created)
+│
+└── docs/
+    └── Pybliometrics_Installation_Guide.pdf
